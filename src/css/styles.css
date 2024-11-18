@@ -1,0 +1,332 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: white; /* Light text */
+    line-height: 1.6;
+    font-size: 16px; /* Base font size */
+    padding: 0 20px; /* Add some horizontal padding to the body */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1f1f1f; /* Dark header background */
+    border-bottom: 2px solid #333;
+    margin-bottom: 40px; /* Margin to separate header from the rest */
+    flex-wrap: wrap; /* Allow the items to wrap if needed */
+}
+
+header .logo img {
+    width: 150px; /* Adjust logo size */
+    max-width: 100%; /* Make logo responsive */
+    height: auto;
+}
+header .logo img:hover {
+    transform: scale(1.1); /* Slight scale on hover for effect */
+    transition-duration: 0.5s;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.3rem; /* Use rem for scalability */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 15px 20px;
+
+
+}
+
+header nav ul li a:hover {
+    color: #8a5c9a;
+
+
+}
+/* About Section */
+#about {
+    padding: 40px 20px;
+    background-image: url('../images/1111.png'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    text-align: center;
+    margin-bottom: 60px; /* Add margin below the about section */
+    border-radius: 8px;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Section Styles */
+section {
+    margin: 0 40px;
+    padding: 40px;
+    background-color: #151515;
+    margin-bottom: 40px;
+    border-radius: 8px;
+
+}
+#how-it-works {
+    background-color: #ffffff;
+
+}
+
+section h2 {
+    font-size: 2.2rem; /* Use rem for scalability */
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    color: #fff;
+    text-align: center;
+}
+
+.how-it-works-text{
+    color: black;
+}
+#how-it-works-header{
+     color: black;
+ }
+#how-it-works .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #fff;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+#how-it-works .section-content img {
+    flex: 1; /* Image takes up 1 part of the space */
+    max-width: 40%; /* Limit image width */
+}
+
+#how-it-works .section-content p {
+    flex: 2; /* Text takes up 2 parts of the space */
+    font-size: 1.2rem; /* Slightly increase font size */
+    line-height: 1.8; /* Improve text readability */
+    color: #333; /* Dark text for contrast on light background */
+}
+
+.section-content img {
+    max-width: 50%;
+    padding: 10px;
+}
+.section-image-other {
+    max-width: 100%; /* Increase from 40% to 1.5x */
+
+    transition: transform 0.3s ease; /* Optional: Smooth scaling effect */
+}
+
+.section-image-other:hover {
+    transform: scale(1.05); /* Optional: Slight zoom on hover */
+}
+
+
+.section-content p {
+    font-size: 1.1rem; /* Use rem for scalability */
+    max-width: 1000px;
+    line-height: 1.6;
+    color: #f1f1f1;
+}
+.section-text {
+    flex: 2; /* Text takes up two parts of the space */
+    display: flex;
+    flex-direction: column; /* Stack the paragraphs vertically */
+    gap: 10px; /* Add spacing between paragraphs */
+    color: #333; /* Dark text for contrast */
+    transition: transform 0.3s ease; /* Optional: Smooth scaling effect */
+}
+.section-text:hover {
+
+    transform: scale(1.02); /* Optional: Slight zoom on hover */
+}
+
+.section-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 0; /* Remove extra margin */
+}
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    align-items: center; /* Vertically align both logos at the same level */
+    padding: 20px;
+    background-color: #8a5c9a;
+    border-top: 2px solid #333;
+    flex-wrap: nowrap; /* Prevent items from wrapping */
+
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+
+}
+
+footer .logo img {
+
+    width: 50px; /* Adjust Sonr logo size */
+    height: auto;
+
+}
+
+footer p {
+    font-size: 1rem;
+    color: #bbb;
+    text-align: center;
+    flex-grow: 1; /* Ensures text is centered even if the logos are on the left */
+}
+
+/* Instagram Logo */
+footer .insta-logo {
+    display: flex;
+
+    align-items: center; /* Vertically center the Instagram logo */
+    justify-content: center;
+
+    margin-top: 10px; /* Slight space above Instagram logo */
+}
+
+footer .insta-logo img {
+    width: 30px; /* Adjust Instagram logo size */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+footer .insta-logo img:hover {
+    transform: scale(1.1); /* Slight scale on hover for effect */
+}
+footer .logo img:hover {
+    transform: scale(1.1); /* Slight scale on hover for effect */
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    body {
+        padding: 0 15px; /* Reduce padding for smaller screens */
+    }
+
+    section {
+        margin: 0 20px; /* Reduce margin for smaller screens */
+    }
+
+    .section-content {
+        gap: 20px; /* Adjust gap between items in section */
+    }
+
+    .section-content img {
+        max-width: 80%; /* Scale down images */
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    header nav ul li a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+/* Mobile (smaller than 768px) */
+@media (max-width: 768px) {
+    /* Make sections more mobile-friendly */
+    section {
+        margin: 0 10px;
+        padding: 30px;
+    }
+
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-content img {
+        max-width: 30%;
+        margin-bottom: 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+        padding: 12px;
+        width: 100%;
+        text-align: center;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .logo {
+        margin-bottom: 10px; /* Add space between Sonr logo and text on mobile */
+    }
+
+    footer .insta-logo {
+        margin-top: 15px; /* Add space above Instagram logo on smaller screens */
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
